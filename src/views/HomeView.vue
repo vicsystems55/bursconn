@@ -1,18 +1,289 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <div class="header-one py-3">
+
+      <div class="d-flex justify-content-around">
+        <div class="one">
+          <img class="img-fluid animate__animated animate__zoomIn" style="height: 150px;" src="../assets/1.png" alt="">
+        </div>
+
+
+        <div class="one">
+          <img class="img-fluid animate__animated animate__zoomIn" style="height: 170px;" src="../assets/3.png" alt="">
+        </div>
+
+        <div class="one">
+          <img class="img-fluid animate__animated animate__zoomIn" style="height: 170px;" src="../assets/2.png" alt="">
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="header-two py-5  animate__animated animate__fadeIn text-center">
+      <div class="container font-header animate__animated animate__fadeInUp">
+        <h2>A 4 DAY ANNUAL NATIONAL WORKSHOP ON PUBLIC FINANCE MANAGEMENT
+          AND LEADERSHIP STRATEGY FOR RECTORS, PROVOSTS AND BURSARS OF
+          POLYTECHNICS AND COLLEGES OF TECHNOLOGY, EDUCATION,
+          HEALTH AND AGRICULTURE, IN NIGERIA
+        </h2>
+        <h2 style="color: yellow" class="py-2">Reducing cost and delivering result</h2>
+        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+          <h3> REGISTER NOW</h3>
+         </button>
+      </div>
+    </div>
+
+    <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-3 font-weight-bold" id="exampleModalLabel">REGISTRATION FORM</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body ">
+        <form @submit.prevent="handleSubmit" class="">
+          <div class="mb-3">
+            <label for="surname" class="form-label ">Surname</label>
+            <input
+              type="text"
+              class="form-control"
+              id="surname"
+              v-model="formData.surname"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              v-model="formData.firstName"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="otherNames" class="form-label">Other Names</label>
+            <input
+              type="text"
+              class="form-control"
+              id="otherNames"
+              v-model="formData.otherNames"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail Address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              v-model="formData.email"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="sex" class="form-label">Sex</label>
+            <select
+              class="form-select"
+              id="sex"
+              v-model="formData.sex"
+              required
+            >
+              <option disabled value="">Select</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="text-center">
+            <button style="width: 320px;" type="submit" class="btn btn-warning btn-lg btn-block">REGISTER</button>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+    <div class="header-three py-3 text-center">
+      <div class="container">
+        <h2 style="color: red;" class="animate__animated animate__fadeInUp">HANDS ON PERFORMANCE IMPROVEMENT TRAINING</h2>
+
+
+        <div class="title-section animate__animated animate__fadeInUp animate__delay-1s py-3">
+          <h2 style="color: green; font-weight: bolder;" class="py-2 title">
+            Theme:</h2>
+          <h2>Capacity Building For Quality Delivery</h2>
+        <hr>
+        </div>
+    
+
+
+        <div style=" border-radius: 25px;" class="title-section animate__animated animate__fadeInUp animate__delay-2s py-5 bg-warning shadow">
+          <h2 class="title">Topic:</h2>
+          <h2 class="fs-1 font-weight-bold" style="font-weight: bolder;">Public Finance Managment and Leadership Strategy</h2>
+        
+        </div>
+
+
+        <div class="title-section animate__animated animate__fadeInUp animate__delay-3s py-3 mt-3">
+          <h2 class="title">Target Audience:</h2>
+          <h2>Rectors, Provots and Bursars</h2>
+        <hr>
+        </div>
+
+
+        <div class="title-section animate__animated animate__fadeInUp animate__delay-4s py-3">
+          <h2 class="title">Date</h2>
+          <h2>26 - 29 November, 2024</h2>
+        <hr>
+        </div>
+
+
+        <div class="title-section animate__animated animate__fadeInUp animate__delay-5s animate__delay-1s py-3">
+          <h2 class="title">Venue:</h2>
+          <h2>B.O Ukeje Hall, Jibril Aminu House,</h2>
+          <h2>National Commission for Colleges of Education (NCCE),<br>
+          Plot 829 Cadastral Zone A01, Ralph Shodeinde Street, Gariki FCT-Abuja
+        </h2>
+      <hr>  
+      </div>
+
+
+
+
+
+        <div class=" py-3 mt-3 white-background mx-auto animate__animated animate__fadeIn animate__delay-5s animate__delay-2s shadow" style="border-radius: 20px;">
+          <h2 class="title"> Participation Fee</h2>
+          <h2 class="" style="font-weight: bolder;">NGN 150,000/Perticipant</h2>
+          <h3 class="py-2">(To be paid into the <br> Association of Federal Polytechnic Bursars' <br> Bank Account as provided on the website)
+          </h3>
+          <h3 class="text-danger ">Note: All Participants are expected to register online on or before <br>18th November, 2024 to enable the
+            association put together all their workshop packages and certificates.</h3>
+
+          <h3 class="py-3">For Registration & Association Accound Details, Visit</h3>
+          <h3>www.bursconnationalworkshop.com.ng</h3>
+          <h3>Phone: 08036912263, 07036826996</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer d-flex justify-content-between">
+      <div class="footer-logo">
+        <span>Powered By:</span><br>
+        de'icon con
+      </div>
+
+      <div class="footer-logo2">
+        <span>Sponsor-able by:</span><br>
+        tetfund logo
+
+      </div>
+
+    </div>
+
+
   </div>
 </template>
 
+
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import { reactive, ref } from 'vue';
 
 export default {
   name: 'HomeView',
-  components: {
-    HelloWorld
+  setup() {
+    // Reactive form data
+    const formData = reactive({
+      surname: '',
+      firstName: '',
+      otherNames: '',
+      email: '',
+      sex: ''
+    });
+
+    // State for submission
+    const submitted = ref(false);
+
+    // Handle form submission
+    const handleSubmit = () => {
+      submitted.value = true;
+      console.log('Form Data:', formData);
+    };
+
+    return {
+      formData,
+      submitted,
+      handleSubmit
+    };
   }
-}
+};
 </script>
+
+<style>
+label{
+  text-align: left;
+}
+.title-section animate__animated animate__fadeInUp {
+  padding: 0 70px;
+}
+
+.white-background{
+  background-color: white;
+  max-width: 900px;
+}
+
+.title {
+  color: green;
+  font-weight: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.font-header {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.one img {
+  height: 130px;
+  object-fit: contain;
+
+}
+
+.home {
+
+  background-image: url('../assets/coatarms.png');
+  background-size: 200px;
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.623);
+
+}
+
+.header-one {
+  min-height: 200px;
+}
+
+.header-two {
+  min-height: 400px;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: inset 0 0 0 1000px rgba(1, 143, 60, 0.712);
+
+  /* background-color: green; */
+  color: white;
+  background-image: url('../assets/bg.jpeg');
+
+}
+
+.header-three {
+
+  box-shadow: inset 0 0 0 100vh rgba(191, 226, 201, 0.623);
+
+}
+</style>
