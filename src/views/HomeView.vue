@@ -1,47 +1,6 @@
 <template>
-  <div class="home">
-
-    <div class="header-one py-3">
-
-      <div class="d-flex justify-content-around">
-        <div class="one">
-          <img class="img-fluid animate__animated animate__zoomIn" style="height: 150px;" src="../assets/1.png" alt="">
-        </div>
-
-
-        <div class="one">
-          <img class="img-fluid animate__animated animate__zoomIn" style="height: 170px;" src="../assets/3.png" alt="">
-        </div>
-
-        <div class="one">
-          <img class="img-fluid animate__animated animate__zoomIn" style="height: 170px;" src="../assets/2.png" alt="">
-        </div>
-
-
-      </div>
-
-    </div>
-    <div class="header-two py-5  animate__animated animate__fadeIn text-center">
-      <div class="container font-header animate__animated animate__fadeInUp">
-        <h2>A 4 DAY ANNUAL NATIONAL WORKSHOP ON PUBLIC FINANCE MANAGEMENT
-          AND LEADERSHIP STRATEGY FOR RECTORS, PROVOSTS AND BURSARS OF
-          POLYTECHNICS AND COLLEGES OF TECHNOLOGY, EDUCATION,
-          HEALTH AND AGRICULTURE, IN NIGERIA
-        </h2>
-        <h2 style="color: yellow" class="py-2">Reducing cost and delivering result</h2>
-        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <h3> REGISTER NOW</h3>
-        </button>
-      </div>
-    </div>
-
-    <!-- Button trigger modal -->
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button> -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
           <div class="modal-header">
@@ -89,6 +48,48 @@
         </div>
       </div>
     </div>
+
+  <div class="home">
+
+    <div class="header-one py-3">
+
+      <div class="d-flex justify-content-around">
+        <div class="one">
+          <img class="img-fluid animate__animated animate__zoomIn" style="height: 150px;" src="../assets/1.png" alt="">
+        </div>
+
+
+        <div class="one">
+          <img class="img-fluid animate__animated animate__zoomIn" style="height: 170px;" src="../assets/3.png" alt="">
+        </div>
+
+        <div class="one">
+          <img class="img-fluid animate__animated animate__zoomIn" style="height: 170px;" src="../assets/2.png" alt="">
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="header-two py-5  animate__animated animate__fadeIn text-center">
+      <div class="container font-header animate__animated animate__fadeInUp">
+        <h2>A 4 DAY ANNUAL NATIONAL WORKSHOP ON PUBLIC FINANCE MANAGEMENT
+          AND LEADERSHIP STRATEGY FOR RECTORS, PROVOSTS AND BURSARS OF
+          POLYTECHNICS AND COLLEGES OF TECHNOLOGY, EDUCATION,
+          HEALTH AND AGRICULTURE, IN NIGERIA
+        </h2>
+        <h2 style="color: yellow" class="py-2">Reducing cost and delivering result</h2>
+        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <h3> REGISTER NOW</h3>
+        </button>
+      </div>
+    </div>
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
 
     <div class="header-three py-3 text-center">
       <div class="container">
