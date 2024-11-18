@@ -49,14 +49,14 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body ">
-        <form @submit.prevent="handleSubmit" class="">
+        <div @submit.prevent="handleSubmit" class="">
           <div class="mb-3">
             <label for="surname" class="form-label ">Surname</label>
             <input
               type="text"
               class="form-control"
               id="surname"
-              v-model="formData.surname"
+              v-model="surname"
               required
             />
           </div>
@@ -66,7 +66,7 @@
               type="text"
               class="form-control"
               id="firstName"
-              v-model="formData.firstName"
+              v-model="firstName"
               required
             />
           </div>
@@ -76,7 +76,7 @@
               type="text"
               class="form-control"
               id="otherNames"
-              v-model="formData.otherNames"
+              v-model="otherNames"
             />
           </div>
           <div class="mb-3">
@@ -85,7 +85,7 @@
               type="email"
               class="form-control"
               id="email"
-              v-model="formData.email"
+              v-model="email"
               required
             />
           </div>
@@ -105,7 +105,7 @@
           <div class="text-center py-3">
             <button style="width: 320px;" type="submit" class="btn btn-warning btn-lg btn-block shadow">REGISTER</button>
           </div>
-        </form>
+        </div>
       </div>
       
     </div>
@@ -208,7 +208,7 @@ export default {
 
   methods: {
     registerMember(){
-      
+
     }
   },
 }
