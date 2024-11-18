@@ -42,7 +42,7 @@
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
+  <div class="modal-dialog modal-dialog-centered modal-md">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-3 font-weight-bold" id="exampleModalLabel">REGISTRATION FORM</h1>
@@ -89,22 +89,21 @@
               required
             />
           </div>
-          <div class="mb-3">
-            <label for="sex" class="form-label">Sex</label>
-            <select
-              class="form-select"
-              id="sex"
-              v-model="formData.sex"
-              required
-            >
-              <option disabled value="">Select</option>
-              <option>Male</option>
-              <option>Female</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="text-center">
-            <button style="width: 320px;" type="submit" class="btn btn-warning btn-lg btn-block">REGISTER</button>
+          <div class=" mb-3 form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Male
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                female
+              </label>
+            </div>
+
+          <div class="text-center py-3">
+            <button style="width: 320px;" type="submit" class="btn btn-warning btn-lg btn-block shadow">REGISTER</button>
           </div>
         </form>
       </div>
@@ -164,14 +163,14 @@
         <div class=" py-3 mt-3 white-background mx-auto animate__animated animate__fadeIn animate__delay-5s animate__delay-2s shadow" style="border-radius: 20px;">
           <h2 class="title"> Participation Fee</h2>
           <h2 class="" style="font-weight: bolder;">NGN 150,000/Perticipant</h2>
-          <h3 class="py-2">(To be paid into the <br> Association of Federal Polytechnic Bursars' <br> Bank Account as provided on the website)
+          <h3 class="py-2">👉 To be paid into the <br> Association of Federal Polytechnic Bursars' <br> Bank Account as provided on the website
           </h3>
           <h3 class="text-danger ">Note: All Participants are expected to register online on or before <br>18th November, 2024 to enable the
             association put together all their workshop packages and certificates.</h3>
 
           <h3 class="py-3">For Registration & Association Accound Details, Visit</h3>
-          <h3>www.bursconnationalworkshop.com.ng</h3>
-          <h3>Phone: 08036912263, 07036826996</h3>
+          <h3>🌐 www.bursconnationalworkshop.com.ng</h3>
+          <h3>☎ 08036912263, 07036826996</h3>
         </div>
       </div>
     </div>
@@ -196,39 +195,31 @@
 
 
 <script>
-import { reactive, ref } from 'vue';
-
 export default {
-  name: 'HomeView',
-  setup() {
-    // Reactive form data
-    const formData = reactive({
-      surname: '',
-      firstName: '',
-      otherNames: '',
-      email: '',
-      sex: ''
-    });
-
-    // State for submission
-    const submitted = ref(false);
-
-    // Handle form submission
-    const handleSubmit = () => {
-      submitted.value = true;
-      console.log('Form Data:', formData);
-    };
-
+  data() {
     return {
-      formData,
-      submitted,
-      handleSubmit
-    };
-  }
-};
+      surname: '',
+      firstname:'',
+      othername: '',
+      email: '',
+      gender:'',
+    }
+  },
+
+  methods: {
+    registerMember(){
+      
+    }
+  },
+}
 </script>
 
 <style>
+.footer{
+  padding: 5px 20px;
+  background-color: green;
+  color: white;
+}
 label{
   text-align: left;
 }
