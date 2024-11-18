@@ -29,121 +29,102 @@
           HEALTH AND AGRICULTURE, IN NIGERIA
         </h2>
         <h2 style="color: yellow" class="py-2">Reducing cost and delivering result</h2>
-        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <h3> REGISTER NOW</h3>
-         </button>
+        </button>
       </div>
     </div>
 
     <!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Launch demo modal
 </button> -->
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-md">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-3 font-weight-bold" id="exampleModalLabel">REGISTRATION FORM</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body ">
-        <div @submit.prevent="handleSubmit" class="">
-          <div class="mb-3">
-            <label for="surname" class="form-label ">Surname</label>
-            <input
-              type="text"
-              class="form-control"
-              id="surname"
-              v-model="surname"
-              required
-            />
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3 font-weight-bold" id="exampleModalLabel">REGISTRATION FORM</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="mb-3">
-            <label for="firstName" class="form-label">First Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="firstName"
-              v-model="firstName"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <label for="otherNames" class="form-label">Other Names</label>
-            <input
-              type="text"
-              class="form-control"
-              id="otherNames"
-              v-model="otherNames"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">E-mail Address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              v-model="email"
-              required
-            />
-          </div>
-          <div class=" mb-3 form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                Male
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">
-                female
-              </label>
-            </div>
+          <div class="modal-body ">
+            <div @submit.prevent="handleSubmit" class="">
+              <div class="mb-3">
+                <label for="surname" class="form-label ">Surname</label>
+                <input type="text" class="form-control" id="surname" v-model="surname" required />
+              </div>
+              <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" v-model="firstName" required />
+              </div>
+              <div class="mb-3">
+                <label for="otherNames" class="form-label">Other Names</label>
+                <input type="text" class="form-control" id="otherNames" v-model="otherNames" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail Address</label>
+                <input type="email" class="form-control" id="email" v-model="email" required />
+              </div>
+              <div class=" mb-3 form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Male
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  female
+                </label>
+              </div>
 
-          <div class="text-center py-3">
-            <button style="width: 320px;" type="submit" class="btn btn-warning btn-lg btn-block shadow">REGISTER</button>
+              <div class="text-center py-3">
+                <button @click="registerMember()" style="width: 320px;" type="submit"
+                  class="btn btn-warning btn-lg btn-block shadow">REGISTER</button>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
-      
     </div>
-  </div>
-</div>
 
     <div class="header-three py-3 text-center">
       <div class="container">
-        <h2 style="color: red;" class="animate__animated animate__fadeInUp">HANDS ON PERFORMANCE IMPROVEMENT TRAINING</h2>
+        <h2 style="color: red;" class="animate__animated animate__fadeInUp">HANDS ON PERFORMANCE IMPROVEMENT TRAINING
+        </h2>
 
 
         <div class="title-section animate__animated animate__fadeInUp animate__delay-1s py-3">
           <h2 style="color: green; font-weight: bolder;" class="py-2 title">
             Theme:</h2>
           <h2>Capacity Building For Quality Delivery</h2>
-        <hr>
+          <hr>
         </div>
-    
 
 
-        <div style=" border-radius: 25px;" class="title-section animate__animated animate__fadeInUp animate__delay-2s py-5 bg-warning shadow">
+
+        <div style=" border-radius: 25px;"
+          class="contianer title-section animate__animated animate__fadeInUp animate__delay-2s py-5 bg-warning shadow">
           <h2 class="title">Topic:</h2>
-          <h2 class="fs-1 font-weight-bold" style="font-weight: bolder;">Public Finance Managment and Leadership Strategy</h2>
-        
+          <h2 class="fs-1 font-weight-bold" style="font-weight: bolder;">Public Finance Managment and Leadership
+            Strategy</h2>
+
         </div>
 
 
         <div class="title-section animate__animated animate__fadeInUp animate__delay-3s py-3 mt-3">
           <h2 class="title">Target Audience:</h2>
           <h2>Rectors, Provots and Bursars</h2>
-        <hr>
+          <hr>
         </div>
 
 
         <div class="title-section animate__animated animate__fadeInUp animate__delay-4s py-3">
           <h2 class="title">Date</h2>
           <h2>26 - 29 November, 2024</h2>
-        <hr>
+          <hr>
         </div>
 
 
@@ -151,26 +132,30 @@
           <h2 class="title">Venue:</h2>
           <h2>B.O Ukeje Hall, Jibril Aminu House,</h2>
           <h2>National Commission for Colleges of Education (NCCE),<br>
-          Plot 829 Cadastral Zone A01, Ralph Shodeinde Street, Gariki FCT-Abuja
-        </h2>
-      <hr>  
-      </div>
+            Plot 829 Cadastral Zone A01, Ralph Shodeinde Street, Gariki FCT-Abuja
+          </h2>
+          <hr>
+        </div>
 
 
 
 
 
-        <div class=" py-3 mt-3 white-background mx-auto animate__animated animate__fadeIn animate__delay-5s animate__delay-2s shadow" style="border-radius: 20px;">
+        <div
+          class="container py-3 mt-3 white-background mx-auto animate__animated animate__fadeIn animate__delay-5s animate__delay-2s shadow"
+          style="border-radius: 20px;">
           <h2 class="title"> Participation Fee</h2>
           <h2 class="" style="font-weight: bolder;">NGN 150,000/Perticipant</h2>
-          <h3 class="py-2">👉 To be paid into the <br> Association of Federal Polytechnic Bursars' <br> Bank Account as provided on the website
+          <h3 class="py-2">👉 To be paid into the <br> Association of Federal Polytechnic Bursars' <br> Bank Account as
+            provided on the website
           </h3>
-          <h3 class="text-danger ">Note: All Participants are expected to register online on or before <br>18th November, 2024 to enable the
+          <h3 class="text-danger ">Note: All Participants are expected to register online on or before <br>18th
+            November, 2024 to enable the
             association put together all their workshop packages and certificates.</h3>
 
           <h3 class="py-3">For Registration & Association Accound Details, Visit</h3>
-          <h3>🌐 www.bursconnationalworkshop.com.ng</h3>
-          <h3>☎ 08036912263, 07036826996</h3>
+          <p>🌐 www.bursconnationalworkshop.com.ng</p>
+          <p>☎ 08036912263, 07036826996</p>
         </div>
       </div>
     </div>
@@ -195,41 +180,60 @@
 
 
 <script>
+import axios from 'axios';
 export default {
   data() {
     return {
       surname: '',
-      firstname:'',
+      firstname: '',
       othername: '',
       email: '',
-      gender:'',
+      gender: '',
+      loading: false,
     }
   },
 
   methods: {
-    registerMember(){
+    registerMember() {
 
+      axios({
+        method: "post",
+        url: process.env.VUE_APP_URL + '/api/bursconn/register-member',
+        data: {
+          email: this.email,
+        }
+      })
+        .then((response) => {
+          console.log(response),
+            this.msg = true
+          // return this.$router.push('/reset-password')
+        })
+        .catch((err) => {
+          console.log(err)
+        })
     }
   },
 }
 </script>
 
 <style>
-.footer{
+.footer {
   padding: 5px 20px;
   background-color: green;
   color: white;
 }
-label{
+
+label {
   text-align: left;
 }
+
 .title-section animate__animated animate__fadeInUp {
   padding: 0 70px;
 }
 
-.white-background{
+.white-background {
   background-color: white;
-  max-width: 900px;
+  /* max-width: 900px; */
 }
 
 .title {
