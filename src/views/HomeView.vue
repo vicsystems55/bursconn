@@ -54,7 +54,9 @@
 
               <div class="text-center py-3">
                 <button @click="registerMember()" style="width: 320px;" type="submit"
-                  class="btn btn-warning btn-lg btn-block shadow">REGISTER</button>
+                  class="btn btn-warning btn-lg btn-block shadow">
+                {{loading?'Register':'Please wait ...'}}
+                </button>
               </div>
             </div>
           </div>
@@ -261,6 +263,8 @@ export default {
   methods: {
     registerMember() {
 
+      this.loading = true;
+
 
       axios({
         method: "post",
@@ -277,12 +281,16 @@ export default {
       })
         .then((response) => {
 
+          this.loading = false
+
           
           console.log(response),
             this.msg = true
           return this.$router.push('/registration-successful')
         })
         .catch((err) => {
+
+          this.loading = false
           console.log(err)
         })
     }
