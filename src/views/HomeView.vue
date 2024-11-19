@@ -162,9 +162,19 @@
           <h2 class="title"> Participation Fee</h2>
           <h2 class="" style="font-weight: bolder;">NGN 150,000/Perticipant</h2>
           <h3 class="py-2">👉 To be paid into the <br> Association of Federal Polytechnic Bursars' <br> Bank Account as
-            provided on the website
+            provided
           </h3>
-          <h3 class="text-danger ">Note: All Participants are expected to register online on or before <br>22nd
+         <div class="py-2">
+          <h3 class="text-success fw-bold ">Account Name</h3>
+          <h3 class="">Federal Polytechnic Bursars Corporative Society</h3>
+          <br>
+          <h3 class="text-success fw-bold ">Account Number</h3>
+          <h3 class="">0212829968</h3>
+          <br>
+          <h3 class="text-success fw-bold ">Bank </h3>
+          <h3 class="">Guarantee Trust Bank (GTBank)</h3>
+         </div>
+          <h3 class="text-danger py-3">Note: All Participants are expected to register online on or before <br>22nd
             November, 2024 to enable the
             association put together all their workshop packages and certificates.</h3>
 
