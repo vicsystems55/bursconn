@@ -22,6 +22,20 @@
                 <input type="text" class="form-control" id="otherNames" v-model="othername" />
               </div>
               <div class="mb-3">
+                <label for="schoolName" class="form-label">Name of Institution</label>
+                <input type="text" class="form-control" id="schoolName" v-model="schoolName" />
+              </div>
+              <div class="mb-3">
+                <label for="state-select">Select State:</label>
+                <select id="state-select" class="form-control" v-model="selectedState">
+                  <option value="" disabled>Select a state</option>
+                  <option v-for="state in states" :key="state" :value="state">
+                    {{ state }}
+                  </option>
+                </select>
+               
+              </div>
+              <div class="mb-3">
                 <label for="email" class="form-label">E-mail Address</label>
                 <input type="email" class="form-control" id="email" v-model="email" required />
               </div>
@@ -191,6 +205,47 @@ export default {
       email: '',
       gender: '',
       loading: false,
+      selectedState: "",
+      schoolName:'', // Stores the selected state
+      states: [
+        "Abia",
+        "Adamawa",
+        "Akwa Ibom",
+        "Anambra",
+        "Bauchi",
+        "Bayelsa",
+        "Benue",
+        "Borno",
+        "Cross River",
+        "Delta",
+        "Ebonyi",
+        "Edo",
+        "Ekiti",
+        "Enugu",
+        "Gombe",
+        "Imo",
+        "Jigawa",
+        "Kaduna",
+        "Kano",
+        "Katsina",
+        "Kebbi",
+        "Kogi",
+        "Kwara",
+        "Lagos",
+        "Nasarawa",
+        "Niger",
+        "Ogun",
+        "Ondo",
+        "Osun",
+        "Oyo",
+        "Plateau",
+        "Rivers",
+        "Sokoto",
+        "Taraba",
+        "Yobe",
+        "Zamfara",
+        "FCT (Federal Capital Territory)"
+      ]
     }
   },
 
@@ -207,6 +262,8 @@ export default {
           firstname: this.firstname,
           othername: this.othername,
           gender: this.gender,
+          schoolName: this.schoolName,
+          selectedState: this.selectedState
         }
       })
         .then((response) => {
