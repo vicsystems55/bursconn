@@ -1,6 +1,6 @@
 <template>
       <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div data-bs-backdrop='false' class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
           <div class="modal-header">
@@ -8,31 +8,31 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body ">
-            <div @submit.prevent="handleSubmit" class="">
+            <div  class="">
               <div class="mb-3">
                 <label for="surname" class="form-label ">Surname</label>
                 <input type="text" class="form-control" id="surname" v-model="surname" required />
               </div>
               <div class="mb-3">
                 <label for="firstName" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="firstName" v-model="firstName" required />
+                <input type="text" class="form-control" id="firstName" v-model="firstname" required />
               </div>
               <div class="mb-3">
                 <label for="otherNames" class="form-label">Other Names</label>
-                <input type="text" class="form-control" id="otherNames" v-model="otherNames" />
+                <input type="text" class="form-control" id="otherNames" v-model="othername" />
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">E-mail Address</label>
                 <input type="email" class="form-control" id="email" v-model="email" required />
               </div>
               <div class=" mb-3 form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <input class="form-check-input" type="radio" v-model="gender" :value="'male'" id="flexRadioDefault1">
                 <label class="form-check-label" for="flexRadioDefault1">
                   Male
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <input class="form-check-input" type="radio" v-model="gender" :value="'female'" id="flexRadioDefault2" >
                 <label class="form-check-label" for="flexRadioDefault2">
                   female
                 </label>
@@ -197,17 +197,24 @@ export default {
   methods: {
     registerMember() {
 
+
       axios({
         method: "post",
         url: process.env.VUE_APP_URL + '/api/bursconn/register-member',
         data: {
           email: this.email,
+          surname: this.surname,
+          firstname: this.firstname,
+          othername: this.othername,
+          gender: this.gender,
         }
       })
         .then((response) => {
+
+          
           console.log(response),
             this.msg = true
-          // return this.$router.push('/reset-password')
+          return this.$router.push('/registration-successful')
         })
         .catch((err) => {
           console.log(err)
