@@ -164,7 +164,7 @@
           <h3 class="py-2">👉 To be paid into the <br> Association of Federal Polytechnic Bursars' <br> Bank Account as
             provided on the website
           </h3>
-          <h3 class="text-danger ">Note: All Participants are expected to register online on or before <br>18th
+          <h3 class="text-danger ">Note: All Participants are expected to register online on or before <br>22nd
             November, 2024 to enable the
             association put together all their workshop packages and certificates.</h3>
 
