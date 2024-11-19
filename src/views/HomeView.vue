@@ -178,9 +178,8 @@
             November, 2024 to enable the
             association put together all their workshop packages and certificates.</h3>
 
-          <h3 class="py-3">For Registration & Association Accound Details, Visit</h3>
-          <p>🌐 www.bursconnationalworkshop.com.ng</p>
-          <p>☎ 08036912263, 07036826996</p>
+
+          <h4>☎ 08036912263, 07036826996</h4>
         </div>
       </div>
     </div>
