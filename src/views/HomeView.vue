@@ -55,7 +55,7 @@
               <div class="text-center py-3">
                 <button @click="registerMember()" style="width: 320px;" type="submit"
                   class="btn btn-warning btn-lg btn-block shadow">
-                {{loading?'Register':'Please wait ...'}}
+                {{loading?'Please wait...':'Register'}}
                 </button>
               </div>
             </div>
