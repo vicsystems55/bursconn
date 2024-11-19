@@ -69,16 +69,16 @@
 
       <div class="d-flex justify-content-around">
         <div class="one">
-          <img class="img-fluid animate__animated animate__zoomIn" style="height: 150px;" src="../assets/1.png" alt="">
+          <img class="img-fluid animate__animated animate__zoomIn" style="height: 140px;" src="../assets/1.png" alt="">
         </div>
 
 
         <div class="one">
-          <img class="img-fluid animate__animated animate__zoomIn" style="height: 170px;" src="../assets/3.png" alt="">
+          <img class="img-fluid animate__animated animate__zoomIn" style="height: 160px;" src="../assets/3.png" alt="">
         </div>
 
         <div class="one">
-          <img class="img-fluid animate__animated animate__zoomIn" style="height: 170px;" src="../assets/2.png" alt="">
+          <img class="img-fluid animate__animated animate__zoomIn" style="height: 160px;" src="../assets/2.png" alt="">
         </div>
 
 
@@ -157,11 +157,11 @@
 
 
         <div
-          class="container py-3 mt-3 white-background mx-auto animate__animated animate__fadeIn animate__delay-5s animate__delay-2s shadow"
+          class="container py-5 mt-3 white-background mx-auto animate__animated animate__fadeIn animate__delay-5s animate__delay-2s shadow"
           style="border-radius: 20px;">
           <h2 class="title"> Participation Fee</h2>
-          <h2 class="" style="font-weight: bolder;">NGN 150,000/Perticipant</h2>
-          <h3 class="py-2">👉 To be paid into the <br> Association of Federal Polytechnic Bursars' <br> Bank Account as
+          <h2 class="" style="font-weight: bolder;">NGN 150,000/Participant</h2>
+          <h3 class="py-3">👉 To be paid into the <br> Association of Federal Polytechnic Bursars' <br> Bank Account as
             provided
           </h3>
          <div class="py-2">
