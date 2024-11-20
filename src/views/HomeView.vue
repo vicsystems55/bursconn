@@ -90,8 +90,7 @@
     <div class="header-two py-5  animate__animated animate__fadeIn text-center">
       <div class="container font-header animate__animated animate__fadeInUp">
         <h2>A 4 DAY ANNUAL NATIONAL WORKSHOP ON PUBLIC FINANCE MANAGEMENT
-          AND LEADERSHIP STRATEGY FOR RECTORS, PROVOSTS AND BURSARS OF
-          POLYTECHNICS, COLLEGES OF TECHNOLOGY, EDUCATION,
+          AND LEADERSHIP STRATEGY FOR RECTORS, PROVOSTS AND BURSARS OF COLLEGES OF TECHNOLOGY, EDUCATION,
           HEALTH AND AGRICULTURE, IN NIGERIA
         </h2>
         <h2 style="color: yellow" class="py-2">Reducing cost and delivering result</h2>
@@ -163,12 +162,12 @@
           style="border-radius: 20px;">
           <h2 class="title"> Participation Fee</h2>
           <h2 class="" style="font-weight: bolder;">NGN 150,000/Participant</h2>
-          <h3 class="py-3">👉 To be paid into the <br> Association of Federal Polytechnic Bursars' <br> Bank Account as
+          <h3 class="py-3">👉 To be paid into the <br> Association of Federal Bursars' <br> Bank Account as
             provided
           </h3>
          <div class="py-2">
           <h3 class="text-success fw-bold ">Account Name</h3>
-          <h3 class="">Federal Polytechnic Bursars Corporative Society</h3>
+          <h3 class="">Federal Bursars Corporative Society</h3>
           <br>
           <h3 class="text-success fw-bold ">Account Number</h3>
           <h3 class="">0212829968</h3>
