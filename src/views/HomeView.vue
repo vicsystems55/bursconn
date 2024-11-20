@@ -133,7 +133,7 @@
 
         <div class="title-section animate__animated animate__fadeInUp animate__delay-3s py-3 mt-3">
           <h2 class="title">Target Audience:</h2>
-          <h2>Rectors, Provots and Bursars</h2>
+          <h2>Rectors, Provosts and Bursars</h2>
           <hr>
         </div>
 
