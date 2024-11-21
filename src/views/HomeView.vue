@@ -186,17 +186,23 @@
     </div>
 
     <div class="footer d-flex justify-content-between">
-      <div class="footer-logo">
-        <span>Powered By:</span><br>
-        de'icon con
+      <div class=" footer-logo">
+        <span>Powered By:</span>
       </div>
 
-      <div class="footer-logo2">
-        <span>Sponsor-able by:</span><br>
-        tetfund logo
-
+      <div class=" footer-logo2">
+        <span>Sponsor-able by:</span>
       </div>
 
+    </div>
+    <div class="bg-white d-flex justify-content-between">
+      <div class="logo1">
+        <img class="img-fluid" style="width: 200px;" src="../assets/deicon.jpg" alt="">
+      </div>
+
+      <div class="logo1">
+        <img class="img-fluid" style="width: 200px;" src="../assets/tett.jpg" alt="">
+      </div>
     </div>
 
 
