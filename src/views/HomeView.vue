@@ -91,7 +91,7 @@
       <div class="container font-header animate__animated animate__fadeInUp">
         <h2>A 4 DAY ANNUAL NATIONAL WORKSHOP ON PUBLIC FINANCE MANAGEMENT
           AND LEADERSHIP STRATEGY FOR RECTORS, PROVOSTS, BURSARS OF COLLEGES OF TECHNOLOGY, EDUCATION,
-          HEALTH, AGRICULTURE AND ANY SENIOR MANAGEMENT STAFF OF POLYTECHNICS IN NIGERIA
+          HEALTH, AGRICULTURE AND ANY SENIOR MANAGEMENT STAFF OF POLYTECHNICS IN NIGERIA
         </h2>
         <h2 style="color: yellow" class="py-2">Reducing cost and delivering result</h2>
         <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">

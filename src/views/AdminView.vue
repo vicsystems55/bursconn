@@ -29,6 +29,7 @@
               <th>Other Names</th>
               <th>Email</th>
               <th>State</th>
+              <th>Institution</th>
               <th>Payment Status</th>
             </tr>
           </thead>
@@ -40,6 +41,8 @@
               <td>{{ member.otherNames || 'N/A' }}</td>
               <td>{{ member.email }}</td>
               <td>{{ member.state }}</td>
+              <td>{{ member.schoolName }}</td>
+
               <td>
                 <span
                   :class="[
